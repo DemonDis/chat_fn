@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 class HydraAIClient:
-    def __init__(self, api_key=os.getenv("API_KEY"), base_url=os.getenv("BASE_URL", "https://api.hydraai.ru/v1")):
+    def __init__(self, api_key=os.getenv("API_KEY"), base_url=os.getenv("BASE_URL")):
         self.api_key = api_key
         self.base_url = base_url
         self.headers = {
