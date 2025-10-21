@@ -23,3 +23,27 @@ py -m pip install -r requirements.txt
 ```bash
 py main.py
 ```
+
+- __Удалите текущий (неверный) удаленный репозиторий `origin`:__
+
+  ```bash
+  git remote remove origin
+  ```
+
+- __Добавьте правильный удаленный репозиторий `origin`:__
+
+  ```bash
+  git remote add origin https://github.com/DemonDis/chat_fn.git
+  ```
+
+- __Установите основную ветку как `main`:__
+
+  ```bash
+  git branch -M main
+  ```
+
+- __Отправьте ваш код в удаленный репозиторий:__
+
+  ```bash
+  git push -u origin main
+  ```
